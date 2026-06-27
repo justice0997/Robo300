@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="style.css">
+
+<div class="game-card">
+  <div class="toggle-container">
+    <button id="theme-btn">☀️ Light Mode</button>
+  </div>
+
+  <header>
+    <img class="profile-pic" src="https://robohash.org/game-robot" alt="Game Robot">
+    <h1>🤖 RoboGuess 3000</h1>
+    <p class="subtitle">Can you beat the computer's logic?</p>
+  </header>
+
+  <main class="game-section">
+    <!-- NEW: Lives Counter Tracker Display -->
+    <div id="lives-container">❤️❤️❤️</div>
+    
+    <p>The core engine has locked in a secret number between 1 and 10. Enter your guess below:</p>
+    
+    <div class="game-controls">
+      <input type="number" id="guess-input" min="1" max="10" placeholder="5">
+      <button id="guess-btn">Guess</button>
+    </div>
+    
+    <p id="game-message"></p>
+    
+    <button id="reset-btn" class="hidden">Play Again 🔄</button>
+  </main>
+</div>
+
+<script src="script.js"></script>
